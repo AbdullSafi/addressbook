@@ -31,8 +31,9 @@ public class ContactForm extends FormLayout {
     TextField email = new TextField("Email");
     TextField task = new TextField("Task"); 
     DateField birthDate = new DateField("Birth date");
-    DateField endDate = new DateField("end date"); 
     DateField startDate = new DateField("start date"); 
+    DateField endDate = new DateField("end date"); 
+   
 
     Contact contact;
 

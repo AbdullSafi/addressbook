@@ -35,6 +35,7 @@ public class ContactService {
             Random r = new Random(0);
             Calendar cal = Calendar.getInstance();
             Date da = new Date();
+            Date en = new Date();
             for (int i = 0; i < 100; i++) {
                 Contact contact = new Contact();
                 contact.setFirstName(fnames[r.nextInt(fnames.length)]);
@@ -46,8 +47,8 @@ public class ContactService {
                         r.nextInt(11), r.nextInt(28));
                 contact.setBirthDate(cal.getTime());
                 contact.setStartDate(da); //new
-                contact.setEndDate(da); //new
-                contact.setTask("mother of all tasks"); //new
+                contact.setEndDate(en); //new
+                contact.setTask("insert a task"); //new
                 contactService.save(contact);
             }
             instance = contactService;
