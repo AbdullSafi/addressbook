@@ -1,7 +1,5 @@
-language: java install:
-- mvn install jdk:
+language: java 
+install:
+- mvn install
+jdk:
 - oraclejdk8
-
-before_install:
-  - gem update --system
-  - gem --version
